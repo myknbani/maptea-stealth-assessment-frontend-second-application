@@ -46,10 +46,10 @@ export function useLeads() {
 
     const poll = () => {
       reexecuteQuery({ requestPolicy: 'network-only' });
-      timeoutId = setTimeout(poll, 10000);
+      timeoutId = setTimeout(poll, 10_000);
     };
 
-    timeoutId = setTimeout(poll, 10000);
+    poll();
 
     return () => clearTimeout(timeoutId);
   }, [reexecuteQuery]);
