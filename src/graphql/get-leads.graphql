@@ -1,0 +1,19 @@
+query GetLeads($paginationOptions: ListLeadsInput!) {
+  leads(listLeadsInput: $paginationOptions) {
+    pageInfo {
+      itemsPerPage
+      currentPage
+      totalItemsCount
+      hasNextPage
+      hasPreviousPage
+      offset
+    }
+    records {
+      serviceTypes {
+        name
+      }
+      fullName
+      email
+    }
+  }
+}
