@@ -7,7 +7,7 @@ import graphqlEslint from '@graphql-eslint/eslint-plugin'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
-  globalIgnores(['dist', 'src/gql/**']),
+  globalIgnores(['dist', 'src/generated/**']),
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
