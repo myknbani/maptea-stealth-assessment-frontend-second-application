@@ -10,6 +10,10 @@ export default defineConfig([
   globalIgnores(['dist', 'src/generated/**']),
   {
     files: ['**/*.{ts,tsx}'],
+    processor: graphqlEslint.processor,
+  },
+  {
+    files: ['**/*.{ts,tsx}'],
     extends: [
       js.configs.recommended,
       tseslint.configs.recommended,
@@ -43,9 +47,5 @@ export default defineConfig([
       '@graphql-eslint/no-undefined-variables': 'error',
       '@graphql-eslint/no-unused-variables': 'warn',
     },
-  },
-  {
-    files: ['**/*.{graphql,gql}'],
-    processor: graphqlEslint.processor,
   },
 ])
