@@ -1,6 +1,7 @@
 # # Maptea Backend Assessment
 
-This is a simple GraphQL frontend for the [Maptea Assessment Backend](https://github.com/myknbani/maptea-stealth-backend-second-application)
+- This is a simple GraphQL frontend for the [Maptea Assessment Backend](https://github.com/myknbani/maptea-stealth-backend-second-application)
+- Hosted at https://maptea-stealth-frontend.netlify.app/
 
 ## Getting Started
 
