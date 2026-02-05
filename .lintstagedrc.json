@@ -1,0 +1,10 @@
+{
+  "*.{ts,tsx}": [
+    "prettier --write",
+    "eslint --fix"
+  ],
+  "*.{graphql,gql}": [
+    "prettier --write",
+    "eslint --fix"
+  ]
+}
